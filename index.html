@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>至优进化 · 应急演练沙盒</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="logo"></span>至优进化<span class="sep"></span><span class="sub">应急演练沙盒</span><span class="tag">Demo</span></a>
+    <nav>
+      <a href="#/" data-nav="home">场景工坊</a>
+      <a href="#/dash" data-nav="dash">能力看板</a>
+    </nav>
+    <div class="top-right">
+      <span id="modeBadge" class="badge off">检测中…</span>
+      <button id="btnSettings" class="icon-btn">设置</button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <div id="modal-root"></div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="vendor/OrbitControls.js"></script>
+  <script src="vendor/CopyShader.js"></script>
+  <script src="vendor/LuminosityHighPassShader.js"></script>
+  <script src="vendor/GammaCorrectionShader.js"></script>
+  <script src="vendor/EffectComposer.js"></script>
+  <script src="vendor/RenderPass.js"></script>
+  <script src="vendor/ShaderPass.js"></script>
+  <script src="vendor/UnrealBloomPass.js"></script>
+  <script src="vendor/RoomEnvironment.js"></script>
+
+  <script src="js/engine/textures.js"></script>
+  <script src="js/engine/assets.js"></script>
+  <script src="js/engine/effects.js"></script>
+  <script src="js/engine/templates.js"></script>
+  <script src="js/engine/audio.js"></script>
+  <script src="js/engine/stage.js"></script>
+
+  <script src="js/data/catalog.js"></script>
+  <script src="js/data/scenarios/bof-splash.js"></script>
+  <script src="js/data/scenarios/bof-ladle-leak.js"></script>
+  <script src="js/data/scenarios/caster-breakout.js"></script>
+  <script src="js/data/scenarios/gas-leak.js"></script>
+  <script src="js/data/scenarios/confined-space.js"></script>
+  <script src="js/data/scenarios/crane-coil.js"></script>
+  <script src="js/data/scenarios/elec-fire.js"></script>
+
+  <script src="js/app/store.js"></script>
+  <script src="js/app/composer.js"></script>
+  <script src="js/app/logic.js"></script>
+  <script src="js/app/app.js"></script>
+</body>
+</html>
